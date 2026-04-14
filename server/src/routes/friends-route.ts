@@ -1,10 +1,10 @@
 import express from 'express';
 import {
+    createFriendController,
+    deleteFriendController,
     findAllFriendsController,
     findFriendByCodeController,
-    createFriendController,
     updateFriendController,
-    deleteFriendController,
 } from '../controllers/friend-controller.js';
 import { verifyTokenInBack } from '../middlewares/token-middleware.js';
 

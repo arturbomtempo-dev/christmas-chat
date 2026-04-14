@@ -1,7 +1,7 @@
 import express, { Request, Response } from 'express';
 import { configureCORS } from './middlewares/cors-middleware.js';
-import friendRouter from './routes/friends-route.js';
 import { errorMiddleware } from './middlewares/error-middleware.js';
+import friendRouter from './routes/friends-route.js';
 const connectDatabase = require('./database/db.js');
 
 const port = process.env.PORT || 3000;
